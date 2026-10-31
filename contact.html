@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Local Lense Kaduna</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased">
+
+    <!-- Simple Header with Back Button -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-red-600 font-bold text-sm flex items-center space-x-2 hover:underline">
+                <i class="fa-solid fa-arrow-left"></i> <span>Back to Home</span>
+            </a>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Local Lense Kaduna</span>
+        </div>
+          <!-- Brand Logo Image -->
+<a href="index.html" class="flex items-center space-x-2">
+    <img src="logo.jpg" alt="Local Lense Kaduna Logo" class="h-8 md:h-10 w-auto object-contain">
+</a>
+    </header>
+
+    <!-- Contact Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8 bg-white mt-6 rounded-xl shadow-sm border border-gray-100">
+        <div class="mb-6 border-b border-gray-200 pb-4">
+            <span class="bg-red-600 text-white font-bold px-3 py-1 rounded text-xs uppercase tracking-wider">Get in Touch</span>
+            <h1 class="text-2xl md:text-4xl font-black text-slate-900 tracking-tight mt-2">
+                Contact the Newsroom
+            </h1>
+            <p class="text-slate-500 text-sm mt-1">Have a news tip, press release, or advertising inquiry? Reach out to our desk.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Info Cards with Real Details -->
+            <div class="space-y-4">
+                <a href="mailto:ifeanyichukwuma2025@gmail.com" class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-red-600 transition block">
+                    <div class="bg-red-600 text-white p-3 rounded-lg"><i class="fa-solid fa-envelope text-lg"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">Email Desk</h3>
+                        <p class="text-xs text-slate-500 mt-1">ifeanyichukwuma2025@gmail.com</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Tap to send direct email</p>
+                    </div>
+                </a>
+
+                <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                    <div class="bg-red-600 text-white p-3 rounded-lg"><i class="fa-solid fa-location-dot text-lg"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">Newsroom Headquarters</h3>
+                        <p class="text-xs text-slate-500 mt-1">Kaduna Metropolis, Kaduna State,</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Nigeria.</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/2348079245518" target="_blank" class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-red-600 transition block">
+                    <div class="bg-red-600 text-white p-3 rounded-lg"><i class="fa-brands fa-whatsapp text-lg"></i></div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">WhatsApp News Line</h3>
+                        <p class="text-xs text-slate-500 mt-1">+234 807 924 5518</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Tap for instant WhatsApp chat</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Contact Form that Routes to WhatsApp -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 flex flex-col justify-between">
+                <form id="whatsapp-form" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <h3 class="font-bold text-slate-900 text-base mb-2">Send Message via WhatsApp</h3>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Your Name</label>
+                        <input type="text" id="sender-name" required class="w-full bg-white border border-gray-200 text-xs rounded px-3 py-2.5 focus:outline-none focus:border-red-600 text-slate-700" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600 mb-1">Message / News Tip</label>
+                        <textarea id="sender-message" rows="4" required class="w-full bg-white border border-gray-200 text-xs rounded px-3 py-2.5 focus:outline-none focus:border-red-600 text-slate-700" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 rounded transition cursor-pointer flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>Send to WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white mt-16 py-6 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Local Lense Kaduna. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Format and Send Message to WhatsApp -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('sender-name').value;
+            const message = document.getElementById('sender-message').value;
+            
+            const phoneNumber = "2348079245518";
+            const text = `Hello Local Lense Desk,%0A%0AMy name is ${name}.%0A${message}`;
+            
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
