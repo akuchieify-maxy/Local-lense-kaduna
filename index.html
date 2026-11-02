@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="LFIXdH_jRT1Jjcw5FLAvRrlpr60tEgnoi96R2IVH5rc" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-48HHP6LLNH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-48HHP6LLNH');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Lense Kaduna | Delivering Timely Local News & Security Watch</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Local Lense Kaduna is your trusted digital source for timely news, security safety watches, investigative journalism, politics, and community stories across Kaduna State, Nigeria.">
+    <meta name="keywords" content="Local Lense Kaduna, Kaduna Security Watch, Kaduna News, Kaduna State Politics, Northern Nigeria Business, Report Security Incident">
+    <link rel="canonical" href="https://locallensekaduna.vercel.app/">
+
+    <!-- Open Graph / Social Media Sharing Tags -->
+    <meta property="og:title" content="Local Lense Kaduna | Security Watch & Local News">
+    <meta property="og:description" content="Your trusted digital source for security updates, safety watches, and local journalism across Kaduna State.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://locallensekaduna.vercel.app/">
+    <meta property="og:site_name" content="Local Lense Kaduna">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "Local Lense Kaduna",
+      "url": "https://locallensekaduna.vercel.app/",
+      "logo": "https://locallensekaduna.vercel.app/images/logo.png",
+      "sameAs": [
+        "https://wa.me/2348079245518"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-807-924-5518",
+        "contactType": "Security Triage & Editorial Newsroom",
+        "email": "ifeanyichukwuma2025@gmail.com"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Kaduna State, Nigeria"
+      }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans antialiased">
+     <!-- Brand Logo Image -->
+<a href="index.html" class="flex items-center space-x-2">
+    <img src="logo.jpg" alt="Local Lense Kaduna Logo" class="h-8 md:h-10 w-auto object-contain">
+</a>
+
+    <!-- TOP BREAKING NEWS & SECURITY TICKER -->
+    <a href="kaduna-safety-update.html" class="bg-red-700 hover:bg-red-800 text-white text-xs md:text-sm py-2.5 px-4 block transition shadow-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1">
+            <div class="flex items-center space-x-2 overflow-hidden w-full">
+                <span class="bg-white text-red-700 font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wide animate-pulse shadow-sm shrink-0">Safety Alert</span>
+                <p class="truncate font-medium underline underline-offset-2">Kaduna State Security Watch: Latest community advisory and verified incident reports updated daily.</p>
+            </div>
+            <div class="hidden md:flex space-x-4 text-xs font-semibold shrink-0">
+                <span>View Security Log →</span>
+            </div>
+        </div>
+    </a>
+
+    <!-- MAIN HEADER & NAVIGATION -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <!-- Branding & Universal Actions Bar -->
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <span class="font-black text-xl sm:text-2xl text-red-700 tracking-tight">LOCAL LENSE KADUNA</span>
+            </a>
+
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <button id="search-btn" aria-label="Search" class="p-2 text-gray-700 hover:text-black focus:outline-none">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </button>
+                
+                <a href="https://api.whatsapp.com/send?phone=2348079245518&text=Hello%20Local%20Lense%20Kaduna,%20I%20want%20to%20report%20a%20security%20incident:" 
+                   target="_blank" 
+                   class="flex items-center bg-green-600 hover:bg-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow transition shrink-0">
+                    <i class="fa-brands fa-whatsapp mr-1 text-sm"></i> 
+                    <span>Report Incident</span>
+                </a>
+
+                <button id="menu-toggle" aria-label="Toggle Menu" class="md:hidden p-2 text-gray-700 hover:text-black focus:outline-none">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Dropdown Navigation Menu -->
+        <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row bg-white md:bg-slate-900 text-slate-800 md:text-white px-6 py-4 md:py-2.5 space-y-3 md:space-y-0 md:space-x-5 text-sm font-semibold shadow-xl md:shadow-inner border-b md:border-none">
+            <a href="kaduna-safety-update.html" class="bg-red-600 text-white hover:bg-red-700 px-3 py-2 rounded whitespace-nowrap flex items-center w-fit shadow">
+                <i class="fa-solid fa-shield-halved mr-1.5"></i> Security / Safety Watch
+            </a>
+            <a href="index.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Home</a>
+            <a href="index.html#metropolis" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Metropolis (Tech)</a>
+            <a href="business-story.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Business</a>
+            <a href="education-story.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Education</a>
+            <a href="politics-story.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Politics</a>
+            <a href="culture-story.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Culture</a>
+            <a href="sports-story.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 border-b border-gray-100 md:border-none pb-2 md:pb-0">Sports</a>
+            <a href="international-news.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0 text-slate-500 md:text-slate-300 border-b border-gray-100 md:border-none pb-2 md:pb-0">International Hub</a>
+            <a href="about.html" class="hover:text-red-600 md:hover:text-red-400 py-1 md:py-0">About Us</a>
+        </nav>
+    </header>
+
+    <!-- SEARCH MODAL OVERLAY -->
+    <div id="search-modal" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md flex items-start justify-center pt-24 px-4">
+        <div class="bg-white w-full max-w-2xl rounded-xl shadow-2xl p-6 relative">
+            <button id="close-search" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Search Local Lense Kaduna</h3>
+            <form onsubmit="handleSearch(event)" class="flex items-center border-2 border-red-600 rounded-lg overflow-hidden">
+                <input type="text" id="search-input" placeholder="Search safety updates, tech hubs, markets, politics..." class="w-full px-4 py-3 focus:outline-none text-slate-700 text-sm">
+                <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 font-bold transition cursor-pointer"><i class="fa-solid fa-search"></i></button>
+            </form>
+            <p class="text-xs text-slate-400 mt-3">Popular tags: Security, Safety Watch, Tech, Infrastructure, Markets, Politics</p>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="max-w-7xl mx-auto px-4 py-6">
+        
+        <!-- PRIORITY SAFETY HUB BANNER -->
+        <section class="mb-8 bg-red-50 border-2 border-red-200 rounded-2xl p-6 shadow-sm">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-3">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Priority Safety Hub</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight">
+                        Kaduna Community Security Watch & Emergency Triage
+                    </h2>
+                    <p class="text-slate-700 text-sm md:text-base leading-relaxed">
+                        Verified updates, commuter advisories, and direct ground reporting across Kaduna State. Witnessed an incident? Send details directly to our newsroom via WhatsApp for immediate verification.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 shrink-0 w-full md:w-auto">
+                    <a href="kaduna-safety-update.html" class="bg-slate-900 hover:bg-black text-white text-center font-bold text-sm px-6 py-3 rounded-xl shadow transition">
+                        Read Safety Brief →
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=2348079245518&text=Hello%20Local%20Lense%20Kaduna,%20I%20want%20to%20report%20a%20security%20incident:" target="_blank" class="bg-green-600 hover:bg-green-700 text-white text-center font-bold text-sm px-6 py-3 rounded-xl shadow transition flex items-center justify-center">
+                        <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Report via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAD STORIES & METROPOLIS BEATS -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <a href="tech-hub.html" class="lg:col-span-2 bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition group block" id="metropolis">
+                <div class="relative h-64 md:h-96 overflow-hidden bg-slate-200">
+                    <img src="tech-pic.jpg" alt="Kaduna Tech Hub" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent opacity-80"></div>
+                    <span class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">Metropolis</span>
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+                        <span class="text-xs text-red-200 font-medium mb-2 block"><i class="fa-regular fa-clock mr-1"></i> 2 hours ago • By Editorial Desk</span>
+                        <h1 class="text-2xl md:text-3xl font-bold leading-tight group-hover:text-red-200 transition">
+                            Inside Kaduna's Emerging Tech Hubs: How Local Creators Are Scaling Digital Solutions
+                        </h1>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                        A close look at how young entrepreneurs and developers across Kaduna are transforming digital spaces, building localized platforms, and driving technological innovation from the ground up.
+                    </p>
+                    <span class="inline-block mt-4 text-red-600 font-bold text-sm group-hover:underline">Read Full Story →</span>
+                </div>
+            </a>
+
+            <div class="flex flex-col space-y-6">
+                <a href="business-story.html" class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition flex flex-col justify-between group block" id="business">
+                    <div>
+                        <span class="text-red-600 text-xs font-bold uppercase tracking-wider">Business</span>
+                        <h3 class="font-bold text-slate-900 text-base mt-1 group-hover:text-red-600 transition">
+                            Agricultural Trade in Northern Markets Sees Steady Boost Ahead of Q4
+                        </h3>
+                        <p class="text-slate-500 text-xs mt-2">Local traders report increased demand for agro-allied products as regional logistics improve.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 mt-4 pt-3 border-t border-gray-100">
+                        <span><i class="fa-regular fa-clock mr-1"></i> 4 hrs ago</span>
+                        <span class="text-red-600 font-semibold group-hover:underline">Read More →</span>
+                    </div>
+                </a>
+
+                <a href="education-story.html" class="bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition flex flex-col justify-between group block" id="education">
+                    <div>
+                        <span class="text-red-600 text-xs font-bold uppercase tracking-wider">Education</span>
+                        <h3 class="font-bold text-slate-900 text-base mt-1 group-hover:text-red-600 transition">
+                            State University Launches New Digital Skills Initiative for Undergraduates
+                        </h3>
+                        <p class="text-slate-500 text-xs mt-2">The program aims to bridge the digital literacy gap by equipping students with practical coding skills.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 mt-4 pt-3 border-t border-gray-100">
+                        <span><i class="fa-regular fa-clock mr-1"></i> 6 hrs ago</span>
+                        <span class="text-red-600 font-semibold group-hover:underline">Read More →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- LOCAL NEWS GRID SECTION -->
+        <section class="mt-12">
+            <div class="flex items-center justify-between mb-6 border-b border-gray-200 pb-3">
+                <h3 class="text-xl font-black text-slate-900 tracking-tight uppercase border-l-4 border-red-600 pl-3">Latest Local Updates</h3>
+                <a href="archive.html" class="text-xs font-bold text-red-600 hover:underline">View All Stories →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="politics-story.html" class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition group block">
+                    <div class="h-44 overflow-hidden bg-slate-200">
+                        <img src="politics.jpg" alt="Infrastructure" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-red-600 text-xs font-bold uppercase tracking-wider">Politics</span>
+                        <h4 class="font-bold text-slate-900 text-base mt-1 group-hover:text-red-600 transition">Community Leaders Advocate for Enhanced Infrastructure Funding</h4>
+                        <p class="text-slate-500 text-xs mt-2 line-clamp-2">Key stakeholders meet to discuss community development projects aimed at accelerating local growth.</p>
+                        <span class="block text-xs text-red-600 font-bold mt-4">Read Story →</span>
+                    </div>
+                </a>
+
+                <a href="culture-story.html" class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition group block" id="culture">
+                    <div class="h-44 overflow-hidden bg-slate-200">
+                        <img src="culture.jpg" alt="Culture Heritage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-red-600 text-xs font-bold uppercase tracking-wider">Culture</span>
+                        <h4 class="font-bold text-slate-900 text-base mt-1 group-hover:text-red-600 transition">Celebrating Kaduna's Rich Heritage Through Arts and Local Craft</h4>
+                        <p class="text-slate-500 text-xs mt-2 line-clamp-2">An in-depth look at traditional artisans and local creators preserving historical heritage.</p>
+                        <span class="block text-xs text-red-600 font-bold mt-4">Read Story →</span>
+                    </div>
+                </a>
+
+                <a href="sports-story.html" class="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition group block">
+                    <div class="h-44 overflow-hidden bg-slate-200">
+                        <img src="sports.jpg" alt="Grassroots Football" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-red-600 text-xs font-bold uppercase tracking-wider">Sports</span>
+                        <h4 class="font-bold text-slate-900 text-base mt-1 group-hover:text-red-600 transition">Local Grassroots Football Tournament Kicks Off Next Weekend</h4>
+                        <p class="text-slate-500 text-xs mt-2 line-clamp-2">Teams from across various local government areas prepare for an action-packed championship.</p>
+                        <span class="block text-xs text-red-600 font-bold mt-4">Read Story →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- INTERNATIONAL NEWS SECTION -->
+        <section class="mt-16 pt-8 border-t-2 border-slate-200">
+            <div class="flex items-center justify-between border-b-2 border-slate-900 pb-2 mb-6">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-600 text-white w-7 h-7 rounded flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h2 class="text-lg md:text-xl font-black text-slate-900 uppercase tracking-tight">International News & Global Dispatches</h2>
+                </div>
+                <a href="international-news.html" class="text-xs font-bold text-red-600 uppercase tracking-wider hover:underline">View All World News →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Global Tech</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-3 mb-2 hover:text-red-600 transition cursor-pointer">
+                        Global Tech Giants Announce New AI Frameworks for Emerging Markets
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        International technology conglomerates unveil open-source developer toolkits aimed at expanding mobile-first cloud infrastructure across developing regions.
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-slate-400">
+                        <span>World Desk</span>
+                        <a href="global-tech.html" class="text-red-600 font-bold hover:underline">Read Story →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">World Economy</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-3 mb-2 hover:text-red-600 transition cursor-pointer">
+                        Global Markets Shift as Clean Energy Investments Reach Record Highs
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Cross-border trade agreements and solar tech financing have driven a massive surge in international green-energy funding.
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-slate-400">
+                        <span>Global Economy Desk</span>
+                        <a href="global-economy.html" class="text-red-600 font-bold hover:underline">Read Story →</a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition">
+                    <span class="bg-blue-50 text-blue-700 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Global Innovation</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-3 mb-2 hover:text-red-600 transition cursor-pointer">
+                        Cross-Border Digital Education Platforms Bridge Skills Gap for Millions
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        New collaborative online learning networks are allowing students across continents to access world-class programming curricula.
+                    </p>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-slate-400">
+                        <span>World Desk</span>
+                        <a href="global-innovation.html" class="text-red-600 font-bold hover:underline">Read Story →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-slate-900 text-white mt-16 pt-12 pb-8 border-t-4 border-red-600">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-lg font-black tracking-wider text-white mb-3">LOCAL LENSE KADUNA</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Your trusted digital source for security watches, timely local news, and public interest journalism across Kaduna State and beyond.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold uppercase tracking-wider text-xs mb-3">Categories & Beats</h3>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li><a href="kaduna-safety-update.html" class="text-red-400 font-bold hover:underline">Security / Safety Watch</a></li>
+                    <li><a href="index.html#metropolis" class="hover:text-white transition">Metropolis (Tech)</a></li>
+                    <li><a href="business-story.html" class="hover:text-white transition">Business</a></li>
+                    <li><a href="education-story.html" class="hover:text-white transition">Education</a></li>
+                    <li><a href="politics-story.html" class="hover:text-white transition">Politics</a></li>
+                    <li><a href="international-news.html" class="hover:text-white transition">International News</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase text-red-500 mb-3 tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-xs text-slate-300">
+                    <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="editorial-policy.html" class="hover:text-white transition">Editorial Policy</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=2348079245518&text=Hello%20Local%20Lense%20Kaduna," target="_blank" class="text-green-400 hover:underline">Report an Incident (WhatsApp)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase text-red-500 mb-3 tracking-wider">Newsletter</h4>
+                <form id="newsletter-form" onsubmit="handleSubscribe(event)" class="space-y-2">
+                    <input type="email" id="subscriber-email" required placeholder="Your email address" class="w-full bg-slate-800 border border-slate-700 text-white text-xs rounded px-3 py-2.5 focus:outline-none focus:border-red-600">
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-xs py-2.5 rounded transition cursor-pointer">Subscribe</button>
+                </form>
+                <div id="subscribe-success" class="hidden mt-2 p-2 bg-green-900/50 border border-green-700 text-green-200 text-xs rounded">
+                    <i class="fa-solid fa-circle-check mr-1"></i> Subscribed successfully!
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-slate-800 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+            <p>&copy; 2026 Local Lense Kaduna. All rights reserved.</p>
+            <div class="flex items-center space-x-3 mt-4 md:mt-0">
+                <a href="https://wa.me/2348079245518" target="_blank" title="Chat on WhatsApp" class="bg-slate-800 hover:bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT CONTROLS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search Modal Toggles
+            const searchBtn = document.getElementById('search-btn');
+            const closeSearchBtn = document.getElementById('close-search');
+            const searchModal = document.getElementById('search-modal');
+
+            if (searchBtn && searchModal && closeSearchBtn) {
+                searchBtn.addEventListener('click', () => searchModal.classList.remove('hidden'));
+                closeSearchBtn.addEventListener('click', () => searchModal.classList.add('hidden'));
+                searchModal.addEventListener('click', (e) => {
+                    if (e.target === searchModal) searchModal.classList.add('hidden');
+                });
+            }
+
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    if (mobileMenu.classList.contains('hidden')) {
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    } else {
+                        menuIcon.classList.remove('fa-bars');
+                        menuIcon.classList.add('fa-xmark');
+                    }
+                });
+            }
+        });
+
+        function handleSubscribe(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('subscriber-email');
+            const successMessage = document.getElementById('subscribe-success');
+            const form = document.getElementById('newsletter-form');
+
+            if (emailInput.value.trim() !== "") {
+                form.style.display = "none";
+                successMessage.classList.remove("hidden");
+            }
+        }
+
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search-input').value.trim().toLowerCase();
+            if (query.includes("security") || query.includes("safety") || query.includes("watch")) {
+                window.location.href = "kaduna-safety-update.html";
+            } else if (query.includes("tech") || query.includes("digital")) {
+                window.location.href = "tech-hub.html";
+            } else {
+                window.location.href = "archive.html";
+            }
+        }
+    </script>
+        <!-- Floating Kaduna Weather Widget -->
+    <div class="fixed bottom-4 left-4 z-40 bg-white/90 backdrop-blur-md border border-gray-200 shadow-xl rounded-full px-4 py-2 flex items-center space-x-2 text-xs font-semibold text-slate-800">
+        <i class="fa-solid fa-cloud-sun text-amber-500 text-base"></i>
+        <div>
+            <span class="text-slate-900 font-black">Kaduna:</span> <span>32°C, Sunny</span>
+        </div>
+    </div>
+    
+</body>
+</html>
